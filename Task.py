@@ -59,12 +59,10 @@ def delete_duplicates():
     ).run()
 
     input_list = text_before.split(",")
-    count = dict(Counter(input_list))
+    count = dict(Counter(input_list)) # да, я знаю, что тут 100% хотелось бы другой вариант решения, но...но 
     result = message_dialog(title="Calculations completed:", text=f"{count}").run()
     pick_task()
 
-    # print("Calculations complete, your new set an other stuff: %s" % count)
-    # return count
 
 
 def pick_task():
